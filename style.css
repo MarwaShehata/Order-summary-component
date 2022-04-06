@@ -1,0 +1,173 @@
+
+/* 
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%) //background
+- Bright blue: hsl(245, 75%, 52%)  //price button
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%) //price background
+- Desaturated blue: hsl(224, 23%, 55%) //paragraph
+- Dark blue: hsl(223, 47%, 23%)    //hover ///
+*/
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/*body*/
+body{
+  width: 1400px;
+  margin: 0;
+  background-color: hsl(225, 100%, 94%);
+}
+
+/*main*/
+main{
+   background-image: url("./images/pattern-background-desktop.svg");
+   background-repeat: no-repeat; 
+  background-position: 0% 0%;
+  display: flex;
+  justify-content: center;
+}
+/*section*/
+section{
+  margin-top: 120px;
+   width:30%; 
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+/*image*/
+.imageContainer{
+  width: 100%;
+}
+.imageContainer img{
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+/*info*/
+.infoContainer{
+  padding: 0 2.5rem;
+  background-color: transparent;
+  margin: 2rem 0;
+}
+.orderSummeryContainer h1{
+  margin: 1rem 0;
+  font-weight: 900;
+  font-size: 2rem;
+  }
+.orderSummeryContainer p{
+  padding: 0 1.5rem;
+font-size: 1rem;
+color:hsl(224, 23%, 55%);
+}
+.priceContainer{
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.priceContainer a{
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.priceContainer a:hover{
+  color: hsl(224, 23%, 55%) ;
+}
+.priceInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconContainer{
+  margin-right: 1rem;
+}
+.buttonContainer{
+  font-weight: 700;
+}
+.paymentButton{
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+ background-color:  hsl(245, 75%, 52%);
+ color: #fff;
+}
+.paymentButton:hover{
+ background-color:  hsl(224, 23%, 55%);
+ color: #fff;
+ cursor:grab;
+}
+.cancleButton{
+  color:hsl(224, 23%, 55%);
+  margin: 2rem 0;
+}
+.cancleButton:hover{
+  color:hsl(245, 75%, 52%);
+  margin: 2rem 0;
+  cursor:grab;
+}
+@media screen and (max-width:375px) {
+  body{
+  width: 375px;
+  margin: 0;
+  background-color: hsl(225, 100%, 94%);
+}
+main{
+  font-size: 1rem;
+  background-image: url("./images//pattern-background-mobile.svg");
+  background-repeat: no-repeat; 
+ background-position: 0% 0%;
+ display: flex;
+ justify-content: center;
+}
+section{
+  margin-top: 90px;
+   width:90%; 
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.orderSummeryContainer p{
+  padding: 0 1.5rem;
+font-size: .75rem;
+color:hsl(224, 23%, 55%);
+}
+.infoContainer{
+  font-size: .75rem;
+  padding: 0 2.5rem;
+  background-color: transparent;
+  margin: 2rem 0;
+}
+.orderSummeryContainer h1{
+  margin: 1rem 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+  }
+}
